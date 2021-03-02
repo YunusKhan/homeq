@@ -63,9 +63,9 @@ def runner():
         width,height = pg.size()
         
         pg.click(width/2,height/2)
-        time.sleep(8)
+        time.sleep(60)
         pg.press('enter')
-        time.sleep(8)
+        time.sleep(60)
         pg.hotkey('ctrl', 'w')
     else:
         return
@@ -73,6 +73,7 @@ def runner():
 
 if __name__ == "__main__":
     while(1):
+        os.system('cls')
         t = 900
         runner()
         while t:
